@@ -72,15 +72,14 @@ export default function MainPage() {
         </>}
         image={{
           src: 'images/placeholder.png',
-          alt: 'Hero image',
-          objectFit: 'fill'
+          alt: 'Hero image'
         }}
         buttons={
           <div display='grid' col='2' gap='4' mt='4'>
-            <a variant='button.muted' href='#'>
+            <a variant='button.muted' href='#' h='50'>
               Bid with ETH
             </a>
-            <a variant='button.muted' href='#'>
+            <a variant='button.muted' href='#' h='50'>
               Bid with card
             </a>
           </div>

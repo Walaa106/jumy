@@ -17,24 +17,25 @@ export default function Block({
           display="grid"
           gridAutoFlow="dense"
           col="1|1|2"
-          gap="8|8|5.813rem"
+          gap="8|8|3.3rem"
           alignItems="center"
         >
-          {image && <div w="full|564">
+          {image &&
             <img
               colStart={`null|null|${imagePosition === "left" ? 1 : 2}`}
-              w="full|564"
-              h='609'
+              w="full"
               rounded="lg"
+              objectFit='cover'
               {...image}
             />
-          </div>}
+          }
           <div
             d="flex"
             flexDirection="column"
             alignItems="center|flex-start"
             alignSelf="center|flex-start"
             textAlign="center|left"
+            mt='3'
           >
             {heading && (
               <h1 variant="heading.h1" fontWeight="bolder" lineHeight="tight" fontSize='40px' fontFamily='AvertaDemo-EBI' letterSpacing='-2px'>
