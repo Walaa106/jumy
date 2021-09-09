@@ -10,13 +10,14 @@ const theme = {
     primary: "#06f",
     primaryHover: "#005ae0",
     secondary: "#D81159",
+    online: "#00FF94",
     secondaryHover: "#D81159",
     accent: "#fb3640",
     accentHover: "#fa0f1b",
     selection: "#ff70a0",
     muted: "#fafafa",
     mutedHover: "#f1f1f1",
-    border: "#ebece9",
+    border: "#000",
     borderHover: "#b9bdb3",
     prism: {
       text: "#000000",
@@ -178,7 +179,7 @@ const theme = {
   radii: {
     none: "0",
     sm: "0.125rem",
-    md: "0.25rem",
+    md: ".375rem",
     lg: "0.375rem",
     xl: "0.5rem",
     "2xl": "1rem",
@@ -481,7 +482,7 @@ const theme = {
     alignItems: "center",
     justifyContent: "center",
     color: "text",
-    bg: "muted",
+    bg: "white",
     fontFamily: "AvertaDemo",
     fontSize: "md",
     fontWeight: "medium",
@@ -524,10 +525,6 @@ const theme = {
     },
 
     muted: {
-      bg: "muted",
-      color: "text",
-      borderColor: "muted",
-
       "&:hover, &:focus": {
         bg: "mutedHover",
         color: "text",
@@ -536,6 +533,7 @@ const theme = {
     },
 
     primary: {
+      borderRadius: "jmd",
       bg: "primary",
       color: "white",
       borderColor: "primary",

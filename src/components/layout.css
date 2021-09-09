@@ -9,3 +9,7 @@ body {
     font-family: "AvertaDemo";
     src: url("../fonts/AvertaDemo-Regular.ttf");
   }
+  @font-face {
+    font-family: "AvertaDemo-EBI";
+    src: url("../fonts/AvertaDemo-EBI.otf");
+  }

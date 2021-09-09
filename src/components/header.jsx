@@ -10,7 +10,7 @@ export default function Block({
   const [showMenu, setShowMenu] = React.useState(false);
 
   return (
-    <header py="6" {...props}>
+    <header pt="6" {...props}>
       <div variant="container">
         <div display="flex" alignItems="center">
           {branding && (
@@ -85,6 +85,8 @@ export function NavLinks({ links, ...props }) {
           textAlign="left|center"
           fontSize="xl|md"
           px="4|0"
+          display='flex'
+          alignItems='center'
           _hover={{
             color: "primary",
           }}
