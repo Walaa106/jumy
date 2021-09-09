@@ -1,0 +1,11 @@
+body {
+    font-family: 'AvertaDemo', georgia, serif;
+    font-weight: normal;
+    word-wrap: break-word;
+    font-kerning: normal;
+  }
+
+  @font-face {
+    font-family: "AvertaDemo";
+    src: url("../fonts/AvertaDemo-Regular.ttf");
+  }
