@@ -7,6 +7,7 @@ export default function Block({
   image,
   imagePosition = "left",
   buttons,
+  bids,
   children,
   ...props
 }) {
@@ -17,15 +18,15 @@ export default function Block({
           display="grid"
           gridAutoFlow="dense"
           col="1|1|2"
-          gap="8|8|3.3rem"
+          gap="8|8|5.3rem"
+          px='8'
           alignItems="center"
         >
           {image &&
             <img
               colStart={`null|null|${imagePosition === "left" ? 1 : 2}`}
               w="full"
-              rounded="lg"
-              objectFit='cover'
+              filter='drop-shadow(10px 10px 30px rgba(174, 174, 192, 0.4))'
               {...image}
             />
           }
@@ -35,7 +36,6 @@ export default function Block({
             alignItems="center|flex-start"
             alignSelf="center|flex-start"
             textAlign="center|left"
-            mt='3'
           >
             {heading && (
               <h1 variant="heading.h1" fontWeight="bolder" lineHeight="tight" fontSize='40px' fontFamily='AvertaDemo-EBI' letterSpacing='-2px'>
@@ -48,6 +48,7 @@ export default function Block({
                 {text}
               </p>
             )}
+            {bids}
             {buttons}
             {children}
           </div>

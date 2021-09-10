@@ -13,3 +13,25 @@ body {
     font-family: "AvertaDemo-EBI";
     src: url("../fonts/AvertaDemo-EBI.otf");
   }
+  @font-face {
+    font-family: "TradeGothicBold";
+    src: url("../fonts/TradeGothicBold.ttf");
+  }
+  @font-face {
+    font-family: "TradeGothic";
+    src: url("../fonts/TradeGothic.ttf");
+  }
+
+  .ETH {
+    font-family: 'TradeGothicBold';
+    line-height: 56px;
+    background: linear-gradient(91.26deg, #8AD4EC 0%, #EF96FF 21.74%, #FF56A9 54.03%, #FFAA6C 85.28%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .auction-ending-content {
+    font-family: 'TradeGothicBold'; 
+    line-height: 48px;
+    font-size: 40px;
+  }

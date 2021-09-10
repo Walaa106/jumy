@@ -19,6 +19,7 @@ const theme = {
     mutedHover: "#f1f1f1",
     border: "#000",
     borderHover: "#b9bdb3",
+    testColor: 'linear-gradient(91.26deg, #8AD4EC 0%, #EF96FF 21.74%, #FF56A9 54.03%, #FFAA6C 85.28%)',
     prism: {
       text: "#000000",
       background: "#f6f8fa",
@@ -59,6 +60,7 @@ const theme = {
     "2xl": "1.5rem",
     "3xl": "1.875rem",
     "4xl": "2.25rem",
+    "4mxl": "2.67rem",
     "5xl": "3rem",
     "6xl": "4rem",
   },
@@ -228,7 +230,7 @@ const theme = {
   styles: {
     root: {
       fontFamily: "AvertaDemo",
-      fontSize: 16,
+      fontSize: 15,
       lineHeight: "normal",
       fontFeatureSettings: "'kern'",
       textRendering: "optimizeLegibility",

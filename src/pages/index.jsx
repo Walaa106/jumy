@@ -65,17 +65,40 @@ export default function MainPage() {
         subheading='Edition 1 of 1'
         text={<>
           <div fontFamily='AvertaDemo-EBI'>About the Artwork</div>
-          <p fontFamily='AvertaDemo' lineHeigh='1' mt='2' mb='5'>Resting refuge translates the symbiotic relationship between colors and nature. </p>
+          <p fontFamily='AvertaDemo' lineHeigh='1' mt='2' mb='8'>Resting refuge translates the symbiotic relationship between colors and nature. </p>
           
           <div fontFamily='AvertaDemo-EBI'>About the Artist</div>
           <p fontFamily='AvertaDemo'  lineHeigh='1' mt='2' mb='5'>Jumaker is a contemporary digital Artist with a unique signature and very authentic genre.</p>
         </>}
         image={{
           src: 'images/placeholder.png',
-          alt: 'Hero image'
+          alt: 'Hero image',
         }}
+        bids={<div display='grid' col='2' gap='4' mt='2.6rem'>
+          {/* #TODO this should be once component and reuse that comp. */}
+          <div display='grid' gap='4'>
+            <div fontFamily='AvertaDemo-EBI' fontSize='15px' lineHeight='18px'>Current bid</div>
+            <div fontSize='4mxl' mt='4' className='ETH'>3.50 ETH</div>
+            <div fontFamily='TradeGothic' fontWeight='bold'>$ 12 782 </div>
+
+          </div>
+          <div display='flex' flexDirection='column' gap='4'>
+            <div fontFamily='AvertaDemo-EBI'>Auction ending in</div>
+            {/* #TODO create timer component */}
+            <div fontSize='4mxl' mt='4' display='grid' col='3' className='auction-ending-content'>
+              <div>19</div>
+              <div>23</div>
+              <div>54</div>
+            </div>
+            <div display='grid' col='38px 135px 48px' fontFamily='TradeGothic' fontWeight='bold' textAlign='center'>
+              <div>hr</div>
+              <div>mins</div>
+              <div>sec</div>
+            </div>
+          </div>
+        </div>}
         buttons={
-          <div display='grid' col='2' gap='4' mt='4'>
+          <div display='grid' col='2' gap='4' mt='2.6rem'>
             <a variant='button.muted' href='#' h='50'>
               Bid with ETH
             </a>
