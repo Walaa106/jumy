@@ -9762,7 +9762,8 @@ function Block({ ...props
       variant: "container",
       px: "12",
       children: (0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-        display: "grid",
+        display: "flex|grid",
+        flexDirection: "column-reverse|null",
         gridAutoFlow: "dense",
         col: "1|1|2",
         gap: "8|8|5.3rem",
@@ -9973,7 +9974,7 @@ function Block({
     color: "white",
     children: (0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
       variant: "container",
-      px: "16|110px",
+      px: "8|110px",
       pt: "160px",
       pb: "80px",
       children: [(0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
@@ -9993,8 +9994,9 @@ function Block({
         })]
       }), (0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
         display: "grid",
-        col: "2",
+        col: "1|2",
         fontFamily: "AvertaDemo",
+        gap: "12",
         children: [(0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
           children: [(0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
             fontSize: "2mxl",
@@ -10020,7 +10022,7 @@ function Block({
           display: "grid",
           col: "3",
           fontFamily: "GilroyLight",
-          gap: "5rem",
+          gap: "4|5rem",
           children: socialContent.map(item => (0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
             fontSize: "2sxl",
             letterSpacing: "-0.03em",
@@ -10209,7 +10211,8 @@ function Block({
           display: "flex",
           flexDirection: "column",
           alignSelf: "center|flex-start",
-          textAlign: "center|left",
+          textAlign: "left",
+          px: "8",
           children: [heading && (0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h1", {
             variant: "heading.h1",
             fontWeight: "bolder",

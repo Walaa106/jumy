@@ -33,7 +33,8 @@ export default function Block({
             display="flex"
             flexDirection="column"
             alignSelf="center|flex-start"
-            textAlign="center|left"
+            textAlign="left"
+            px='8'
           >
             {heading && (
               <h1 variant="heading.h1" fontWeight="bolder" lineHeight="tight" fontSize='40px' fontFamily='AvertaDemo-EBI' letterSpacing='-0.03em'>

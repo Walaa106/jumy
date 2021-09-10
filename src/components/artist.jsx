@@ -7,7 +7,7 @@ export default function Block({
   return (
     <section py="6|12" {...props}>
         <div variant="container" px='12'>
-            <div display="grid" gridAutoFlow="dense" col="1|1|2" gap="8|8|5.3rem" alignItems="baseline">
+            <div display="flex|grid" flexDirection="column-reverse|null" gridAutoFlow="dense" col="1|1|2" gap="8|8|5.3rem" alignItems="baseline">
                 <History />
                 <Artist />
             </div>
