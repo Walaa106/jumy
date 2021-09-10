@@ -30,7 +30,7 @@ export default function Block({
             />
           }
           <div
-            d="flex"
+            display="flex"
             flexDirection="column"
             alignItems="center|flex-start"
             alignSelf="center|flex-start"
@@ -47,8 +47,10 @@ export default function Block({
                 {text}
               </p>
             )}
-            {bids}
-            {buttons}
+            <div>
+              {bids}
+              {buttons}
+            </div>
             {children}
           </div>
         </div>

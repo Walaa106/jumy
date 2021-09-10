@@ -78,7 +78,7 @@ export default function MainPage() {
           src: 'images/placeholder.png',
           alt: 'Hero image',
         }}
-        bids={<div display='grid' col='1|1|2' gap='4' mt='2.6rem'>
+        bids={<div  display='grid' col='1|1|2' gap='4' mt='2.6rem' className='bid-container'>
           <div display='flex' flexDirection='column' gap='4'>
             <div fontFamily='AvertaDemo-EBI' fontSize='15px' lineHeight='18px'>Current bid</div>
             <div fontSize='4mxl' mt='4' className='ETH'>3.50 ETH</div>

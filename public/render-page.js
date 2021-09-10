@@ -10190,7 +10190,7 @@ function Block({
           filter: "drop-shadow(10px 10px 30px rgba(174, 174, 192, 0.4))",
           ...image
         }), (0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-          d: "flex",
+          display: "flex",
           flexDirection: "column",
           alignItems: "center|flex-start",
           alignSelf: "center|flex-start",
@@ -10212,7 +10212,9 @@ function Block({
           }), text && (0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
             mt: "2",
             children: text
-          }), bids, buttons, children]
+          }), (0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+            children: [bids, buttons]
+          }), children]
         })]
       })
     })
@@ -11064,10 +11066,11 @@ function MainPage() {
         alt: 'Hero image'
       },
       bids: (0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-        display: "flex",
-        justifyContent: "space-between",
+        display: "grid",
+        col: "1|1|2",
         gap: "4",
         mt: "2.6rem",
+        className: "bid-container",
         children: [(0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
           display: "flex",
           flexDirection: "column",
@@ -11124,8 +11127,8 @@ function MainPage() {
         })]
       }),
       buttons: (0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
-        display: "flex",
-        justifyContent: "space-between",
+        display: "grid",
+        col: "2",
         gap: "4",
         mt: "2.6rem",
         children: [(0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("a", {
