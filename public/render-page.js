@@ -9766,7 +9766,7 @@ function Block({ ...props
         gridAutoFlow: "dense",
         col: "1|1|2",
         gap: "8|8|5.3rem",
-        alignItems: "center",
+        alignItems: "baseline",
         children: [(0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(History, {}), (0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(Artist, {})]
       })
     })
@@ -9957,6 +9957,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+const socialContent = ['Instagram', 'Twitter', 'Discord', 'Terms', 'FAQ', 'Policy'];
 function Block({
   name,
   copyright,
@@ -9981,36 +9982,50 @@ function Block({
           fontSize: "78px",
           fontFamily: "AvertaDemo",
           lineHeight: "96.41px",
-          letterSpacing: "-3px",
+          letterSpacing: "-0.03em",
           children: "Are you an Artist?"
         }), (0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
           fontSize: "73px",
           fontFamily: "GilroyLight",
           lineHeight: "85.55px",
-          letterSpacing: "-4px",
+          letterSpacing: "-0.04em",
           children: "Tell us about you"
         })]
       }), (0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        display: "grid",
+        col: "2",
         fontFamily: "AvertaDemo",
-        children: [(0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-          fontSize: "2mxl",
-          mb: "36px",
-          children: "hello@jumy.co"
-        }), (0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-          display: "flex",
-          flexDirection: "column",
-          fontSize: "smd",
-          mb: "17px",
-          lineHeight: "17.3px",
-          children: [(0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
-            children: "The Offices 4, One Central"
-          }), (0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
-            children: "Dubai, United Arab Emirates"
+        children: [(0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          children: [(0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+            fontSize: "2mxl",
+            mb: "36px",
+            children: "hello@jumy.co"
+          }), (0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+            display: "flex",
+            flexDirection: "column",
+            fontSize: "smd",
+            mb: "17px",
+            lineHeight: "17.3px",
+            children: [(0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+              children: "The Offices 4, One Central"
+            }), (0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+              children: "Dubai, United Arab Emirates"
+            })]
+          }), (0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+            fontSize: "smd",
+            lineHeight: "17.3px",
+            children: "All right reserved."
           })]
         }), (0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-          fontSize: "smd",
-          lineHeight: "17.3px",
-          children: "All right reserved."
+          display: "grid",
+          col: "3",
+          fontFamily: "GilroyLight",
+          gap: "5rem",
+          children: socialContent.map(item => (0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+            fontSize: "2sxl",
+            letterSpacing: "-0.03em",
+            children: item
+          }, item))
         })]
       })]
     })
@@ -10177,7 +10192,8 @@ function Block({
     ...props,
     children: (0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
       variant: "container",
-      px: "12",
+      px: "null|12",
+      textAlign: "left",
       children: (0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
         display: "grid",
         gridAutoFlow: "dense",
@@ -10192,7 +10208,6 @@ function Block({
         }), (0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
           display: "flex",
           flexDirection: "column",
-          alignItems: "center|flex-start",
           alignSelf: "center|flex-start",
           textAlign: "center|left",
           children: [heading && (0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h1", {
@@ -10201,7 +10216,7 @@ function Block({
             lineHeight: "tight",
             fontSize: "40px",
             fontFamily: "AvertaDemo-EBI",
-            letterSpacing: "-2px",
+            letterSpacing: "-0.03em",
             children: heading
           }), subheading && (0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
             fontSize: "15px",
@@ -10213,6 +10228,9 @@ function Block({
             mt: "2",
             children: text
           }), (0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+            w: "full",
+            display: "flex",
+            flexDirection: "column",
             children: [bids, buttons]
           }), children]
         })]
@@ -10293,6 +10311,7 @@ const theme = {
     lg: "1.125rem",
     xl: "1.25rem",
     "2xl": "1.5rem",
+    "2sxl": "1.34rem",
     "2mxl": "1.67rem",
     "3xl": "1.875rem",
     "4xl": "2.25rem",
@@ -11067,10 +11086,10 @@ function MainPage() {
       },
       bids: (0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
         display: "grid",
-        col: "1|1|2",
-        gap: "4",
+        col: "2",
+        gap: "2|4",
         mt: "2.6rem",
-        className: "bid-container",
+        w: "full",
         children: [(0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
           display: "flex",
           flexDirection: "column",
@@ -11112,7 +11131,7 @@ function MainPage() {
             })]
           }), (0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
             display: "grid",
-            col: "38px 135px 48px",
+            col: "auto auto auto|38px 135px 48px",
             fontFamily: "TradeGothic",
             fontWeight: "bold",
             textAlign: "center",
@@ -11131,6 +11150,7 @@ function MainPage() {
         col: "2",
         gap: "4",
         mt: "2.6rem",
+        w: "full",
         children: [(0,reflexjs_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("a", {
           variant: "button.muted",
           href: "#",

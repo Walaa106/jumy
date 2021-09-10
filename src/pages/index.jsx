@@ -78,7 +78,7 @@ export default function MainPage() {
           src: 'images/placeholder.png',
           alt: 'Hero image',
         }}
-        bids={<div  display='grid' col='1|1|2' gap='4' mt='2.6rem' className='bid-container'>
+        bids={<div display='grid' col='2' gap='2|4' mt='2.6rem' w='full'>
           <div display='flex' flexDirection='column' gap='4'>
             <div fontFamily='AvertaDemo-EBI' fontSize='15px' lineHeight='18px'>Current bid</div>
             <div fontSize='4mxl' mt='4' className='ETH'>3.50 ETH</div>
@@ -91,7 +91,7 @@ export default function MainPage() {
               <div>23</div>
               <div>54</div>
             </div>
-            <div display='grid' col='38px 135px 48px' fontFamily='TradeGothic' fontWeight='bold' textAlign='center'>
+            <div display='grid' col='auto auto auto|38px 135px 48px' fontFamily='TradeGothic' fontWeight='bold' textAlign='center'>
               <div>hr</div>
               <div>mins</div>
               <div>sec</div>
@@ -99,7 +99,7 @@ export default function MainPage() {
           </div>
         </div>}
         buttons={
-          <div display='grid' col='2' gap='4' mt='2.6rem'>
+          <div display='grid' col='2' gap='4' mt='2.6rem' w='full'>
             <a variant='button.muted' href='#' h='50'>
               Bid with ETH
             </a>

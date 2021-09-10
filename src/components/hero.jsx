@@ -13,7 +13,7 @@ export default function Block({
 }) {
   return (
     <section py="6|12" {...props}>
-      <div variant="container" px='12'>
+      <div variant="container" px='null|12' textAlign='left'>
         <div
           display="grid"
           gridAutoFlow="dense"
@@ -32,12 +32,11 @@ export default function Block({
           <div
             display="flex"
             flexDirection="column"
-            alignItems="center|flex-start"
             alignSelf="center|flex-start"
             textAlign="center|left"
           >
             {heading && (
-              <h1 variant="heading.h1" fontWeight="bolder" lineHeight="tight" fontSize='40px' fontFamily='AvertaDemo-EBI' letterSpacing='-2px'>
+              <h1 variant="heading.h1" fontWeight="bolder" lineHeight="tight" fontSize='40px' fontFamily='AvertaDemo-EBI' letterSpacing='-0.03em'>
                 {heading}
               </h1>
             )}
@@ -47,7 +46,7 @@ export default function Block({
                 {text}
               </p>
             )}
-            <div>
+            <div w='full' display='flex' flexDirection='column'>
               {bids}
               {buttons}
             </div>
