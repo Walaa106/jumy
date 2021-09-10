@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Header from '../components/header';
+import Artist from '../components/artist';
 import Hero from '../components/hero';
 import '../components/layout.css';
 import { Search, Bell } from 'react-feather';
@@ -37,7 +38,7 @@ const headerMenu = [
     href: '#',
   },
   {
-    title: <Bell size='18' />,
+    title: <Bell size='18' fill='#000' />,
     href: '#',
   },
   {
@@ -60,6 +61,7 @@ export default function MainPage() {
         }}
         links={headerMenu}
       />
+      
       <Hero
         heading='RESTING REFUGE'
         subheading='Edition 1 of 1'
@@ -108,6 +110,8 @@ export default function MainPage() {
           </div>
         }
       />
+
+      <Artist />
     </>
   );
 }

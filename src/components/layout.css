@@ -21,6 +21,10 @@ body {
     font-family: "TradeGothic";
     src: url("../fonts/TradeGothic.ttf");
   }
+  @font-face {
+    font-family: "GilroyLight";
+    src: url("../fonts/GilroyLight.otf");
+  }
 
   .ETH {
     font-family: 'TradeGothicBold';

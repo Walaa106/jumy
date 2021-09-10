@@ -10,7 +10,7 @@ export default function Block({
   const [showMenu, setShowMenu] = React.useState(false);
 
   return (
-    <header pt="6" {...props}>
+    <header pt="6" pb='8' {...props}>
       <div variant="container">
         <div display="flex" alignItems="center">
           {branding && (

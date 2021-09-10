@@ -13,13 +13,12 @@ export default function Block({
 }) {
   return (
     <section py="6|12" {...props}>
-      <div variant="container">
+      <div variant="container" px='12'>
         <div
           display="grid"
           gridAutoFlow="dense"
           col="1|1|2"
           gap="8|8|5.3rem"
-          px='8'
           alignItems="center"
         >
           {image &&
