@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Icon } from "reflexjs";
 import { Instagram, Twitter } from 'react-feather'
 
 export default function Block({
@@ -39,10 +38,10 @@ const Artist = () => (
         <div fontFamily='AvertaDemo-EBI' fontSize='30px' fontWeight='bold' lineHeight='37px' mb='64px'>Artist</div>
         <div mb='33px' lineHeight='30px' fontFamily='AvertaDemo' display='flex'>
             <div position='relative' mr='29px'>
-                <img src='images/jumaker.png' w='74px' position='relative' />
-                <img src='images/officialIcon.png' w='32px' h='32px' position='absolute' right='-10px' top='53px'/>
+                <img src='images/jumaker.png' w='74px' position='relative' alt='jumaker' />
+                <img src='images/officialIcon.png' w='32px' h='32px' position='absolute' right='-10px' top='53px' alt='officialIcon'/>
             </div>
-            <div display='flex' flexDirection='column' alignItems='flex-start' justifyContent='flex-end'>
+            <div display='flex' flexDirection='column' alignItems='flex-start' justifyContent='center'>
                 <div>@Jumaker</div>
                 <div fontFamily='GilroyLight'>United Arab Emirates</div>
             </div>

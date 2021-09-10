@@ -23,7 +23,7 @@ export default function Block({
               }}
             >
               {branding.icon && <Icon name={branding.icon} size="5" mr="2" />}
-              <img src="images/jumy.png" w='39'/>
+              <img src="images/jumy.png" w='39' alt='jumy-logo'/>
             </a>
           )}
           {/* Desktop */}
